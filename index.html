@@ -1,1 +1,82 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World - 90s Geocities Style</title>
+    <style>
+        body {
+            background: #000080 url('https://www.transparenttextures.com/patterns/stardust.png');
+            color: #FFFF00;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 3em;
+            text-shadow: 2px 2px 8px #FF00FF, 0 0 10px #00FFFF;
+            margin-top: 40px;
+            animation: colorchange 2s infinite alternate;
+        }
+        @keyframes colorchange {
+            from { color: #FFFF00; }
+            to { color: #FF00FF; }
+        }
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            border: 3px dashed #00FFFF;
+            background: #000;
+            margin: 30px 0;
+        }
+        .marquee span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: marquee 10s linear infinite;
+            font-size: 1.5em;
+            color: #00FF00;
+            text-shadow: 1px 1px 4px #FF00FF;
+        }
+        @keyframes marquee {
+            0%   { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+        .blink {
+            animation: blink 1s steps(2, start) infinite;
+            color: #FF0000;
+            font-weight: bold;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+        .dancing-star {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            top: 80px;
+            left: 10%;
+            animation: star-move 6s linear infinite alternate;
+        }
+        @keyframes star-move {
+            0%   { left: 10%; top: 80px; }
+            50%  { left: 80%; top: 120px; }
+            100% { left: 10%; top: 80px; }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://www.animatedimages.org/data/media/430/animated-star-image-0012.gif" class="dancing-star" alt="Dancing Star">
+    <h1>HELLO WORLD!</h1>
+    <div class="marquee">
+        <span>Welcome to my 90s-style homepage! &nbsp; 🚀 &nbsp; Under Construction! &nbsp; <span class="blink">[NEW!]</span></span>
+    </div>
+    <p>This is my second update.</p>
+    <hr style="border: 2px groove #FF00FF;">
+    <p>
+        <img src="https://www.animatedimages.org/data/media/36/animated-computer-image-0012.gif" alt="Animated Computer">
+        <br>
+        <span style="font-size:1.2em; color:#00FFFF;">Thanks for visiting!</span>
+    </p>
+</body>
+</html>
